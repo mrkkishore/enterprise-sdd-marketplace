@@ -1,0 +1,7 @@
+#!/bin/sh
+# SDD pre-commit gate. Install once per clone: git config core.hooksPath .githooks
+SDD_SCRIPTS="${SDD_SCRIPTS:-.sdd/tools}"
+node "$SDD_SCRIPTS/verify-standards.js" || exit 1
+node "$SDD_SCRIPTS/validate-gates.js" --all || exit 1
+if command -v gitleaks >/dev/null 2>&1; then gitleaks protect --staged --redact --config .gitleaks.toml || exit 1
+else echo "WARNING: gitleaks not installed; CI will still scan."; fi

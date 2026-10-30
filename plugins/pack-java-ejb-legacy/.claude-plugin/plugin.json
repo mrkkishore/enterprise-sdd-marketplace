@@ -1,0 +1,7 @@
+{
+  "name": "pack-java-ejb-legacy",
+  "version": "0.9.0",
+  "description": "Source pack for Java 8 / EJB 3.x / JSF / EclipseLink JPA / Oracle / WebLogic monoliths: analysis, mapping and semantic parity.",
+  "author": { "name": "Java Modernization Guild" },
+  "keywords": ["sdd-pack", "source"]
+}

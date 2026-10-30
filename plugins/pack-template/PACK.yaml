@@ -1,0 +1,16 @@
+# Pack contract. check-pack-contract.js validates this file.
+name: pack-template
+type: target                 # target | source | domain
+compatible_core: ">=1.0.0 <2.0.0"
+owner: team-or-guild@example.com
+provides:                    # slot -> skill folder name in skills/
+  stack-coding-standards: coding-standards
+  stack-project-setup: project-setup
+  stack-api-patterns: api-patterns
+  stack-data-access: data-access
+  stack-testing: testing
+  stack-security-integration: security-integration
+  stack-observability: observability
+  stack-deployment: deployment
+# Source packs provide: legacy-analysis, legacy-to-target-mapping, semantic-parity
+# Domain packs provide: domain-knowledge (glossary, business rules, regulatory constraints)

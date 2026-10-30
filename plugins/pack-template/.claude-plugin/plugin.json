@@ -1,0 +1,7 @@
+{
+  "name": "pack-template",
+  "version": "1.0.0",
+  "description": "TEMPLATE. Copy and rename to create a stack, source or domain pack.",
+  "author": { "name": "AI Engineering CoE" },
+  "keywords": ["sdd-pack", "target"]
+}

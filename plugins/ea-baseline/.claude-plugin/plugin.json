@@ -1,0 +1,7 @@
+{
+  "name": "ea-baseline",
+  "version": "1.0.0",
+  "description": "Enterprise Architecture baseline: ratified enterprise ADRs, reference architecture, approved platforms and pack catalog. Teams cite these decisions instead of re-deciding them.",
+  "author": { "name": "Enterprise Architecture" },
+  "keywords": ["sdd", "enterprise-architecture", "baseline-adr"]
+}

@@ -1,0 +1,7 @@
+# Governance files require CoE / approver review
+/.claude/rules/enterprise/   @ai-coe
+/.githooks/                  @ai-coe
+/.github/workflows/sdd-gates.yml @ai-coe
+/sdd.config.yaml             @tech-lead
+**/approvals/                @product-owner @solution-architect
+/docs/architecture/adr/      @solution-architect

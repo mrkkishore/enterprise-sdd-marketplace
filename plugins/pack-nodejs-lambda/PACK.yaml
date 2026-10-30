@@ -1,0 +1,13 @@
+name: pack-nodejs-lambda
+type: target
+compatible_core: ">=1.0.0 <2.0.0"
+owner: cloud-platform-guild@example.com
+provides:
+  stack-coding-standards: coding-standards
+  stack-project-setup: project-setup
+  stack-api-patterns: api-patterns
+  stack-data-access: data-access-oracle
+  stack-testing: testing
+  stack-security-integration: security-entra-id
+  stack-observability: observability
+  stack-deployment: deployment-sam-cdk

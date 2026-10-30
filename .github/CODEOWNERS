@@ -1,0 +1,6 @@
+*                         @ai-coe
+/plugins/sdd-core/standards/   @ai-coe @security-architecture
+/plugins/sdd-core/scripts/     @ai-coe @security-architecture
+/plugins/ea-baseline/          @enterprise-architecture
+/enterprise/                   @enterprise-architecture
+/plugins/pack-*/               @ai-coe

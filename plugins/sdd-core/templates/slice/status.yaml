@@ -1,0 +1,9 @@
+slice: SLICE-NNN
+name: short-name
+state: DISCOVER
+wave: 1
+owner: name@example.com
+scope:                       # paths this slice may change (besides specs/, docs/, analysis/)
+  - src/modules/short-name/
+  - tests/short-name/
+history: []                  # appended by the orchestrator: {date, from, to, evidence}

@@ -1,0 +1,42 @@
+{
+  "name": "enterprise-sdd",
+  "owner": {
+    "name": "AI Engineering CoE",
+    "email": "ai-coe@example.com"
+  },
+  "metadata": {
+    "description": "Enterprise AI spec-driven development (SDD) framework: core plugin plus pluggable stack and domain packs."
+  },
+  "plugins": [
+    {
+      "name": "sdd-core",
+      "source": "./plugins/sdd-core",
+      "version": "1.0.0",
+      "description": "Enterprise core: agents, workflows, gates, guardrail hooks, standards, templates. Mandatory for every SDD project."
+    },
+    {
+      "name": "ea-baseline",
+      "source": "./plugins/ea-baseline",
+      "version": "1.0.0",
+      "description": "Enterprise Architecture baseline ADRs, reference decisions and approved pack catalog. Mandatory alongside sdd-core."
+    },
+    {
+      "name": "pack-template",
+      "source": "./plugins/pack-template",
+      "version": "1.0.0",
+      "description": "Starter for building a new stack or domain pack. Copy, rename, fill the slots."
+    },
+    {
+      "name": "pack-java-ejb-legacy",
+      "source": "./plugins/pack-java-ejb-legacy",
+      "version": "0.9.0",
+      "description": "Source pack: analysis and semantic parity for Java 8 / EJB 3.x / JSF / JPA / Oracle monoliths."
+    },
+    {
+      "name": "pack-nodejs-lambda",
+      "source": "./plugins/pack-nodejs-lambda",
+      "version": "0.9.0",
+      "description": "Target pack: Node.js + TypeScript services on AWS Lambda with Oracle, Entra ID, observability."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+---
+approval: data-change
+slice: SLICE-NNN
+approver: name@example.com     # must be listed in sdd.config.yaml approvers for this role
+role: <role>
+date: YYYY-MM-DD
+decision: APPROVED             # APPROVED | REJECTED | APPROVED_WITH_CONDITIONS
+evidence:                      # files and sha256 hashes this approval covers
+  - path: specs/slices/SLICE-NNN/evidence/<file>.md
+    sha256: <hash>
+---
+# data-change approval — SLICE-NNN
+
+## What is being approved
+## Conditions (if any)
+## Risks accepted
+## Signature
+I approve the above as <role>. — <name>, <date>

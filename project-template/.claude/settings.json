@@ -1,0 +1,29 @@
+{
+  "extraKnownMarketplaces": {
+    "enterprise-sdd": {
+      "source": {
+        "source": "git",
+        "url": "https://github.com/mrkkishore/enterprise-sdd-marketplace"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "sdd-core@enterprise-sdd": true,
+    "ea-baseline@enterprise-sdd": true,
+    "pack-nodejs-lambda@enterprise-sdd": true,
+    "pack-java-ejb-legacy@enterprise-sdd": true
+  },
+  "permissions": {
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./**/*.pem)",
+      "Read(./**/*.key)",
+      "Read(./**/secrets/**)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git merge:*)",
+      "Bash(git rebase:*)"
+    ]
+  }
+}

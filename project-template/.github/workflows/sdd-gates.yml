@@ -1,0 +1,22 @@
+name: sdd-gates
+on: [pull_request]
+jobs:
+  gates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-node@v4
+        with: { node-version-file: .nvmrc }
+      - name: Fetch SDD core scripts (pinned to framework.core_version)
+        run: git clone --depth 1 --branch "sdd-core-v$(grep core_version sdd.config.yaml | awk '{print $2}')" https://github.com/mrkkishore/enterprise-sdd-marketplace /tmp/sdd
+      - name: Enterprise standards intact
+        run: node /tmp/sdd/plugins/sdd-core/scripts/verify-standards.js
+      - name: Slot contract
+        run: node /tmp/sdd/plugins/sdd-core/scripts/check-pack-contract.js
+      - name: Gates for every slice
+        run: node /tmp/sdd/plugins/sdd-core/scripts/validate-gates.js --all
+      - name: Approval files committed by listed approvers
+        run: node /tmp/sdd/plugins/sdd-core/scripts/verify-approvers.js
+      - name: Secret scan
+        uses: gitleaks/gitleaks-action@v2

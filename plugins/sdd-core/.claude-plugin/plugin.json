@@ -1,0 +1,7 @@
+{
+  "name": "sdd-core",
+  "version": "1.0.0",
+  "description": "Enterprise AI spec-driven development core: stack-agnostic agents, slice orchestration, evidence gates, guardrail hooks and standards.",
+  "author": { "name": "AI Engineering CoE" },
+  "keywords": ["spec-driven", "sdlc", "governance", "modernization", "enterprise"]
+}

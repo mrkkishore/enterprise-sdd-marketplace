@@ -1,0 +1,8 @@
+name: pack-java-ejb-legacy
+type: source
+compatible_core: ">=1.0.0 <2.0.0"
+owner: java-modernization-guild@example.com
+provides:
+  legacy-analysis: legacy-analysis
+  legacy-to-target-mapping: ejb-to-nodejs-mapping
+  semantic-parity: financial-semantic-parity

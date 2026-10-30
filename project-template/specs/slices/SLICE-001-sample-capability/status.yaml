@@ -1,0 +1,9 @@
+slice: SLICE-001
+name: sample-capability
+state: DISCOVER
+wave: 1
+owner: name@example.com
+scope:                       # paths this slice may change (besides specs/, docs/, analysis/)
+  - src/modules/sample-capability/
+  - tests/sample-capability/
+history: []                  # appended by the orchestrator: {date, from, to, evidence}

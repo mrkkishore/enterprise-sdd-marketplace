@@ -1,0 +1,7 @@
+{
+  "name": "pack-nodejs-lambda",
+  "version": "0.9.0",
+  "description": "Target pack: Node.js 20 + TypeScript services on AWS Lambda with API Gateway, Oracle via RDS Proxy or private connectivity, Entra ID, observability and SAM/CDK deployment.",
+  "author": { "name": "Cloud Platform Guild" },
+  "keywords": ["sdd-pack", "target"]
+}
